@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Vendor: Nuxeo
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 1.0.qualifier
+Bundle-Name: nuxeo-activitystreams
+Nuxeo-Component: OSGI-INF/extensions/de.hofuniversity.iisys.nuxeo.acti
+ vitystreams.ActivityComponent.xml
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: nuxeo-activitystreams;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.nuxeo.ecm.core.api,org.nuxeo.runtime.api,org.nuxeo
+ .ecm.platform.usermanager
+Bundle-Category: runtime

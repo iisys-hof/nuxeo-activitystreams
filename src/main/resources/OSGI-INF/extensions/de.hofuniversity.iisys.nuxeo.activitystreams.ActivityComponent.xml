@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<component name="de.hofuniversity.iisys.nuxeo.activitystreams.ActivityComponent" version="1.0">
+
+  <!--implementation class="de.hofuniversity.iisys.nuxeo.activitystreams.ActivityComponent" /-->
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+    <listener name="activitylistener" async="true" postCommit="true" priority="120"
+      class="de.hofuniversity.iisys.nuxeo.activitystreams.ActivitySender">
+      
+      <event>documentCreated</event>
+      <event>documentModified</event>
+      <event>documentSecurityUpdated</event>
+      <event>documentCreatedByCopy</event>
+      <event>documentMoved</event>
+      <event>documentRestored</event>
+      
+      <event>documentPublished</event>
+      <event>documentUnpublished</event>
+      
+      <event>commentAdded</event>
+      <event>commentRemoved</event>
+      
+      <event>documentLocked</event>
+      <event>documentUnlocked</event>
+      <event>sectionContentPublished</event>
+      <event>binaryTextUpdated</event>
+      
+      <event>documentPublicationApproved</event>
+      <event>documentPublicationRejected</event>
+      <event>documentWaitingPublication</event>
+      <event>aboutToRemove</event>
+      <event>aboutToRemoveVersion</event>
+      
+      <event>documentTagUpdated</event>
+      
+      <!--event>documentRemoved</event-->
+      <!--event>versionRemoved</event-->
+      <!--event>emptyDocumentModelCreated</event-->
+      <!--event>documentDuplicated</event-->
+      
+    </listener>
+  </extension>
+    
+</component>
